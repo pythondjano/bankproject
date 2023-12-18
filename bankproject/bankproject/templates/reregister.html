@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<Html>
+<head>
+<title>
+Registration Page
+</title>
+</head>
+<body bgcolor="Darkblue">
+<br>
+<br>
+<form action="index" onsubmit="myFunction()">
+<label> Full name </label>
+    <input type="text" name="Name" size="15"/> <br> <br>
+<label for="Date_of_birth">Birthday:</label>
+    <input type="date" id="Date_of_birth" name="Date_of_birth">
+<label>  Age </label>
+    <input type="text" name="Age" size="15"/> <br> <br>
+<label>
+Gender :
+</label><br>
+<input type="radio" name="male"/> Male <br>
+<input type="radio" name="female"/> Female <br>
+<input type="radio" name="other"/> Other
+<br>
+<br>
+<label>
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/>
+<input type="text" name="phone" size="10"/> <br> <br>
+Address
+<br>
+<textarea cols="80" name="address" rows="5" value="address">
+</textarea>
+<br> <br>
+Email:
+<input type="email" id="email" name="email"/> <br>
+<br> <br>
+ <label>district :</label>
+<select>
+<option value="District">District</option>
+<option value="Ernakulam">Ernakulam</option>
+<option value="Thrissur">Thrissur</option>
+<option value="Pathanamthitta">Pathanamthitta</option>
+<option value="Alappuzha">Alappuzha</option>
+<option value="Kottayam">Kottayam</option>
+</select>
+<br>
+<br>
+<!--    <label>-->
+<!--        Branch-->
+<!--        <input mbsc-input data-dropdown="true" />-->
+<!--    </label>-->
+     <label>Branch:</label>
+    <select id="single-group-select">
+        <optgroup label="Ernakulam">
+            <option value="Alu">Aluva</option>
+            <option value="Eda">Edappally</option>
+    </optgroup>
+    <optgroup label="Thrissur">
+        <option value="Put">Puthukkad</option>
+        <option value="Cha">Chalakkudy</option>
+    </optgroup>
+     <optgroup label="Pathanamthitta">
+        <option value="Put">Thiruvalla</option>
+        <option value="Cha">Ranni</option>
+    </optgroup>
+    <optgroup label="Alappuzha">
+        <option value="Put">Ambalappuzha</option>
+        <option value="Cha">Changanassheri</option>
+    </optgroup>
+    <optgroup label="kottayam">
+        <option value="Put">Ettumanoor</option>
+        <option value="Cha">Puthuppally</option>
+    </optgroup>
+        <br>
+        <br>
+
+</select>
+ <label>materials provide :</label>
+<select>
+<option value="materials provide">materials provide</option>
+<option value="credit card">credit card</option>
+<option value="debit card">debit card</option>
+<option value="cheque book">cheque book</option>
+</select>
+<br>
+      <br>
+    <input type="submit" value="Submit" onclick=""/>
+    <input type="button" value="logout" onclick="window.location.href = 'index'">
+    <script>
+      function myFunction() {
+         alert("Data Saved Successfully");
+<!--window.location.href = "user";-->
+      }
+</script>
+      </form>
+
+<div>
+</div>
+</body>
+</html>

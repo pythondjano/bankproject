@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<script>
+<!--    function vaidatetexts(){-->
+<!--    if(document.getElementById("username")=="" or document.getElementById("password")==""){-->
+<!--    alert('please fill all the details);-->
+<!--    return false;-->
+<!--    }-->
+<!--    }-->
+</script>
+<!--<form action="user" method="post" >-->
+<form action="user" method="POST" >
+  {% csrf_token %}
+  <input type="text" id="username" name="username" placeholder="Username"><br>
+  <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+  <input type="submit">
+  <a href="register">Register</a>
+    <script>
+      function myFunction() {
+         alert("please fill all fields");
+window.location.href = "login";
+      }
+</script>
+</form>
+</body>
+</html>
